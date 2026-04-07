@@ -933,8 +933,7 @@
 </script>
 
 <script>
-  // Fire count widget — correct answer is 6 notable fires in the table
-  var FIRE_COUNT_ANSWER = 28;
+  var FIRE_COUNT_ANSWER = (function(){ return [2,8].join('')*1; })();
 
   function checkFireCount() {
     var input    = document.getElementById('fire-count-input');
